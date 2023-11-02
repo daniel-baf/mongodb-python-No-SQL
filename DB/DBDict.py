@@ -18,10 +18,10 @@ def reset_setup():
 
 # INSERT
 #  Inserts a student into Student collection
-def insert_student(name: str, s_name: str, user: str, password: str, no_approves=0, no_articles=0):
+def insert_student(name: str, last_name: str, user: str, password: str, no_approves=0, no_articles=0, no_comments=0):
     return DB.insert_into_collection(collection_names[0],
-                                     {"name": name, "s_name": s_name, "no_approves": no_approves,
-                                      "no_articles": no_articles, "user": user,
+                                     {"name": name, "last_name": last_name, "no_approves": no_approves,
+                                      "no_articles": no_articles, "no_comments": no_comments, "user": user,
                                       "password": password})
 
 
