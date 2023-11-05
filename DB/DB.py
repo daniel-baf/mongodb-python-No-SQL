@@ -98,7 +98,7 @@ def delete(collection_name: str, query=None, use_delete_many=False):
 # send the query and new parameters as a dictionary, ej: {key: value}
 # enable use_update_many to update multiple documents where query matches
 # QUERY: search filters: ej {"_id:":"..."}
-# new_values: data to update {"name":"duck",s_name:"a"}
+# new_values: data to update {"name":"duck",last_name:"a"}
 def update(collection_name: str, query: dict, new_values: dict, use_update_many=False):
     try:
         if not use_update_many:
